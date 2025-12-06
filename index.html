@@ -3,59 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyCards</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="../Basic_Project/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
       rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Londrina+Outline&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
       rel="stylesheet" />
   </head>
   <body>
-    <div class="Navbar">
-      <div class="LogoBox">
-        <h1 class="Logo" style="color: rgb(221, 148, 29)">GAME OF THRONES</h1>
+    <div class="Header-container">
+      <div class="startAnimation" id="startAnimation">
+        <dotlottie-wc
+          src="https://lottie.host/98f14fae-a25e-4561-a75b-5941212648bb/567BDxEokL.lottie"
+          style="width: 300px; height: 300px"
+          autoplay
+          loop></dotlottie-wc>
       </div>
-      <div class="navItems">
-        <span id="warPage" class="apiCalling"
-          ><a href="./Nav_items/wars.html">WARS</a></span
-        >
-        <span><a href="./Nav_items/characters.html">CHARACTERS</a></span>
-        <span><a href="./Nav_items/map.html">MAP</a></span>
-        <span><a href="./Nav_items/throne.html">THRONE</a></span>
-      </div>
+      <h1 class="Title" id="Title">Pokemon</h1>
+      <div class="data-Containers" id="data-Containers"></div>
+      <button class="More-button" id="More-button">Show More</button>
     </div>
-
-    <div class="main-container">
-      <img src="./GameOfThrones_1.jpg" />
-      <!-- <img src="../Basic_Project/GameOfThrones_Logo.png" /> -->
-
-      <div class="title">
-        <span>You Know Nothing</span>
-        <span
-          class="Jhon"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgb(221, 148, 29);
-          "
-          >Jhon Snow</span
-        >
-      </div>
-    </div>
-    <!-- <script src="script.js"></script> -->
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+      type="module"></script>
+    <script src="../Basic_Project/script.js"></script>
   </body>
+  1
 </html>

@@ -1,126 +1,101 @@
 * {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* body {
-  background-color: whitesmoke;
-  margin: 0rem;
-  padding: 0rem;
-} */
-
-.Navbar {
-  background-color: black;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* position: fixed; */
-  /* top: 0;
+.Header-container {
+  background-color: rgb(162, 226, 245);
   width: 100%;
-  z-index: 1000; 
-  background: rgba(0, 0, 0, 0.7); 
-  backdrop-filter: blur(6px); */
-  /* border: 0.2rem solid white; */
-
-  /* padding: 0 1rem; */
-}
-
-.LogoBox {
-  background-color: black;
-  font-family: "Science Gothic", sans-serif;
-  margin-top: 0.5rem;
-  height: 3rem;
-  width: 30%;
+  min-height: 100vh;
+  padding-top: 6rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-.Logo {
-  font-size: 1.5rem;
 }
 
-.navItems {
-  background-color: black;
-  font-family: "Science Gothic", sans-serif;
+.Title {
   color: white;
-  font-weight: bold;
-  /* margin-top: 1rem; */
-  height: 1rem;
-  gap: 6.5rem;
-  display: flex;
-  width: 70%;
-  padding: 1rem;
-  padding-right: 8rem;
-  justify-content: end;
-  align-items: center;
-}
-.navItems span a {
-  color: rgb(221, 148, 29);
-  text-decoration: none;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
 }
 
-span a:hover {
-  color: rgb(231, 49, 33);
+.data-Containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.pokemon-box {
+  width: 200px;
+  padding: 15px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
-.titlebutton {
-  background-color: whitesmoke;
+.pokemon-box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-.h1 {
+.pokemon-box img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: 1s ease;
+}
+
+.pokemon-box:hover img {
+  transform: scale(1.1);
+}
+
+.pokemon-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #0398c1;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.More-button {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background: rgb(6, 185, 216);
   color: white;
-  font-size: 2rem;
+  padding: 10px 20px;
+  border: 5px solid white;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
-.main-container {
+.startAnimation {
+  position: fixed; /* always screen center, even on scroll */
+  top: 80%;
+  left: 33%;
+  transform: translate(-20%, -45%);
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
-  background-color: black;
-  overflow: hidden;
-}
-.main-container img {
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.3; /* Added opacity property */
-  display: flex;
-}
 
-.title {
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  position: absolute;
-  color: white;
-  margin-bottom: 10rem;
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  left: 2%;
-  top: 30%;
+  z-index: 999; /* sabke upar dikhega */
 }
-.Jhon {
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  position: absolute;
-  color: white;
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  top: 100%;
-}
-/* .title {
-  font-size: 7rem;
-  display: flex;
-  flex-direction: column;
-  font-family: "Science Gothic", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  color: white;
-  margin-bottom: 10rem;
-  padding-left: 2rem;
-} */
