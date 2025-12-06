@@ -29,7 +29,7 @@ async function myPokeApi() {
   setTimeout(() => {
     hideWelcome();
     ladle();
-  }, 2500);
+  }, 2700);
 }
 
 async function ladle() {
