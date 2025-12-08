@@ -8,21 +8,21 @@ let cardsPerTurn = 20;
 let currentcards = 0;
 
 function showWelcome() {
-  mylogo.style.display = "none";
   welcome.style.display = "block";
+  mylogo.style.display = "none";
   showMore.style.display = "none";
 }
 
 function hideWelcome() {
-  Title.style.display = "block";
   welcome.style.display = "none";
+  mylogo.style.display = "block";
   showMore.style.display = "block";
 }
 
 async function myPokeApi() {
   showWelcome();
   let fetchData = await fetch(
-    `https://pokemon-api-swart-zeta.vercel.app/?id=200`
+    `https://pokemon-api-swart-zeta.vercel.app/?id=150`
   );
   let jsonData = await fetchData.json();
   warehouse = jsonData;
@@ -61,6 +61,15 @@ async function ladle() {
 }
 showMore.addEventListener("click", ladle);
 myPokeApi();
+
+// window.addEventListener("scroll", () => {
+//   let scrollPosition = window.innerHeight + window.scrollY;
+//   let totalHeight = document.body.offsetHeight;
+
+//   if (scrollPosition >= totalHeight - 500) {
+//     ladle();
+//   }
+// });
 
 // let warehouse = [];
 // async function myPokeApi() {
