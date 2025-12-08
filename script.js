@@ -5,7 +5,7 @@ let welcome = document.getElementById("startAnimation");
 let mylogo = document.getElementById("Title");
 let myfooter = document.getElementById("footer");
 
-let cardsPerTurn = 10;
+let cardsPerTurn = 20;
 let currentcards = 0;
 
 function showWelcome() {
