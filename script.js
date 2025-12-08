@@ -3,8 +3,9 @@ let parentContainer = document.getElementById("data-Containers");
 let showMore = document.getElementById("More-button");
 let welcome = document.getElementById("startAnimation");
 let mylogo = document.getElementById("Title");
+let myfooter = document.getElementById("footer");
 
-let cardsPerTurn = 20;
+let cardsPerTurn = 10;
 let currentcards = 0;
 
 function showWelcome() {
@@ -61,6 +62,37 @@ async function ladle() {
 }
 showMore.addEventListener("click", ladle);
 myPokeApi();
+// document.addEventListener("DOMContentLoaded", function () {
+//   const lettersContainer = document.getElementById("footerlogo");
+//   const word = "SENTI";
+
+//   word.split("").forEach((letter, index) => {
+//     const letterElement = document.createElement("p");
+//     letterElement.textContent = letter;
+//     letterElement.style.animationDelay = `${index * 0.2}s`;
+//     lettersContainer.appendChild(letterElement);
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   AOS.init({
+//     duration: 800,
+//     easing: "ease-in-out",
+//     once: true,
+//   });
+
+//   const lettersContainer = document.getElementById("letters-container");
+//   const word = "SENTI";
+
+//   word.split("").forEach((letter, index) => {
+//     const letterElement = document.createElement("p");
+//     letterElement.textContent = letter;
+//     letterElement.setAttribute("data-aos", "fade-up");
+//     letterElement.setAttribute("data-aos-delay", 700 + index * 100);
+//     letterElement.setAttribute("data-aos-anchor-placement", "top-bottom");
+//     lettersContainer.appendChild(letterElement);
+//   });
+// });
 
 // window.addEventListener("scroll", () => {
 //   let scrollPosition = window.innerHeight + window.scrollY;
